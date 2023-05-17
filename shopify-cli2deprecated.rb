@@ -58,7 +58,8 @@ class ShopifyCli2deprecated < Formula
   sha256 "9d8cd40b92ffb3b3ed3915ad3ebb24e239ec132ae383439ac63e71c6d9ecb11c"
   depends_on "ruby"
   depends_on "git"
-  deprecate! date: "2023-05-31", because: "CLI2 sunsetting"
+  deprecate! date: "2023-04-30", because: "CLI2 sunsetting"
+  disable! date: "2023-05-31", because: "CLI2 sunsetting"
 
   def install
     # set GEM_HOME and GEM_PATH to make sure we package all the dependent gems
